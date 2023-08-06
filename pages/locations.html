@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="shortcut icon" href="../assets/images/home-sectioin2-4.png" type="image/x-icon">
+    <title>門市據點</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="location">
+      <div class="container">
+        <h1>門市據點</h1>
+        <div class="location_select">
+          <span>選擇地區</span>
+          <select name="location_selecter" id="location_selecter" class="location_selecter">
+            <option value="台北">台北市</option>
+            <option value="台中">台中</option>
+            <option value="高雄">高雄</option>
+          </select>
+        </div>
+        <ul class="locations_list">
+          <li class="locations_item">
+            <img src="../assets/images/store-1.png" alt="分店圖片">
+            <h2>台北中山旗艦店</h2>
+            <div class="location_detail">
+              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-1234</p>
+              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+            </div>
+            <a class="location_link" href="location_Taipei_Zhongshan.html">詳細資訊</a>
+          </li>
+          <li class="locations_item">
+            <img src="../assets/images/store-2.png" alt="分店圖片">
+            <h2>台北綠園店</h2>
+            <div class="location_detail">
+              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-2345</p>
+              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：台北市中正區復興南路 132-1 號</p>
+            </div>
+            <a class="location_link" href="location_Taipei_GreenGarden.html">詳細資訊</a>
+          </li>
+          <li class="locations_item">
+            <img src="../assets/images/store-3.png" alt="分店圖片">
+            <h2>台中清水旗艦店</h2>
+            <div class="location_detail">
+              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-1234</p>
+              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：台中市清水區經南一路 23 號 8 樓</p>
+            </div>
+            <a class="location_link" href="location_Taichung_Shimizu.html">詳細資訊</a>
+          </li>
+          <li class="locations_item">
+            <img src="../assets/images/store-4.png" alt="分店圖片">
+            <h2>高雄中正形象店</h2>
+            <div class="location_detail">
+              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-1234</p>
+              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+            </div>
+            <a class="location_link" href="location_Kaohsiung_ChungCheng.html">詳細資訊</a>
+          </li>
+          <li class="locations_item">
+            <img src="../assets/images/store-5.png" alt="分店圖片">
+            <h2>高雄夢時代店</h2>
+            <div class="location_detail">
+              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-1234</p>
+              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+            </div>
+            <a class="location_link" href="location_Kaohsiung_DreamMall.html">詳細資訊</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.faq_main{
+    padding-top: 96px;
+    padding-bottom: 56px;
+    @media(max-width: 768px){
+        padding-top: 40px;
+        padding-bottom: 32px;
+    }
+
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+
+        @media(max-width: 768px){
+            font-size: 24px;
+        }
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .faq_item{
+        margin-bottom: 32px;
+    }
+}

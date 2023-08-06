@@ -1,0 +1,401 @@
+.banner{
+  height: 787px;
+  background-image: url("../images/home-header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media(max-width:992px){
+    background-image: url("../images/home-header-sm.png");
+  }
+
+  @media(max-width:768px){
+    height: 396px;
+    background-image: url("../images/home-header-sm.png");
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 296px;
+    padding-bottom: 296px;
+
+    h2{
+      font-size: 36px;
+      color: #650300;
+    }
+
+    h1{
+      font-size: 64px;
+      color:#650300;
+      font-weight: 700;
+    }
+
+    a{
+      font-size: 20px;
+      padding: 6px 12px;
+      color: #FFFFFF;
+      background-color: #aa0601;
+    }
+
+    a:hover{
+      opacity: 0.7;
+    }
+
+    @media(max-width:768px){
+      padding-top: 144px;
+      padding-bottom: 144px;
+      h2{
+        font-size: 16px;
+      }
+      h1{
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+
+.aboutus{
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media(max-width:375px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color:#650300 ;
+    margin-bottom: 32px;
+
+    @media(max-width:375px){
+      font-size: 24px;
+    }
+  }
+  
+  .aboutus-list{
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:992px){
+      flex-wrap: wrap;
+    }
+  }
+
+  .aboutus-item{
+    width: $col-3;
+    text-align: center;
+
+    img{
+      margin-bottom: 24px;
+      width: 83px;
+      height: 83px;
+    }
+    
+    h3{
+      font-size: 24px;
+      color: #650300;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p{
+      font-size: 16px;
+      text-align: left;
+    }
+
+    @media(max-width:992px){
+      width: $col-6;
+      margin-bottom: 24px;
+    }
+
+    @media(max-width:375px){
+
+      width: $col-12;
+    }
+  }
+}
+
+.products-classic-type{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media(max-width:768px){
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #650300;
+    margin-bottom: 48px;
+
+    @media(max-width:768px){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  .classic-type-list{
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:992px){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .classic-type-item{
+    width: $col-4;
+    margin-bottom: 24px;
+    h3{
+      width: 100%;
+      font-size: 48px;
+      font-weight: 700;
+      color: #650300;
+      text-align: center;
+      font-style: italic;
+      
+    }
+
+    @media(max-width:992px){
+      width: $col-6;
+    }
+
+    @media(max-width:768px){
+      width: $col-12;
+    }
+
+
+  }
+}
+
+.products-joint-design{
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  background-image: url("../images/index-bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media(max-width:992px){
+    background-image: url("../images/index-bg-md.png"); 
+    background-position:top;
+  }
+
+  @media(max-width:768px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+
+    @media(max-width:768px){
+      font-size: 24px;
+    }
+  }
+
+  .joint-design-list{
+    display: flex;
+    @media(max-width:992px){
+      flex-direction: column;
+    }
+  }
+
+  .joint-design-item{
+    background-color: #FFFFFF;
+
+    @media(max-width:992px){
+      margin-bottom: 24px;
+    }
+    
+  }
+
+  h3{
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: #AA0601;
+    margin: 8px 0;
+  }
+}
+
+.customer-rec{
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media(max-width:768px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #650300;
+    text-align: center;
+    @media(max-width:768px){
+      font-size: 24px;
+    }
+  }
+
+  .rec-list{
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:992px){
+      flex-wrap: wrap;
+    }
+  }
+
+  .rec-item{
+    width: $col-3;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+
+    h3{
+      font-size: 16px;
+    }
+
+    p{
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 48px;
+    }
+
+    time{
+      font-size: 14px;
+      color: #707070;
+    }
+
+    @media(max-width:992px){
+      width: $col-6;
+      margin-bottom: 24px;
+    }
+
+    @media(max-width:768px){
+      img{
+        width: $col-12;
+      }
+      width: $col-12;
+      margin-bottom: 16px;
+    }
+  }
+
+  .rec-card{
+    padding: 16px;
+  }
+}
+
+.contactus{
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .col-6{
+    width: $col-6;
+    margin: 0 auto;
+
+    @media(max-width:992px){
+      width: $col-10;
+    }
+
+    @media(max-width:768px){
+      width: $col-12;
+    }
+  }
+
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #650300;
+    margin-bottom: 48px;
+  }
+
+  h3{
+    font-size: 20px;
+    margin-bottom: 24px;
+    @media(max-width:992px){
+      font-size: 16px;
+    }
+  }
+
+  label{
+    font-size: 16px;
+  }
+
+  .d-flex{
+    display: flex;
+  }
+  .fxd-c{
+    flex-direction: column;
+  }
+
+  .mb-4{
+  margin-bottom: 16px;
+  }
+
+  .mb-12{
+    margin-bottom: 48px;
+  }
+
+  .checkbox{
+    width: 20px;
+    height: 20px;
+    margin: 0 4px 0 0;
+    border: 20px solid black;
+    
+  }
+
+  .input-style{
+    border: 1px solid #000000;
+    width: 100%;
+    padding: 6px 12px;
+    background-color: #FBF2F2;
+  }
+
+  .feeback-box{
+    min-height: 136px;
+  }
+
+  a{
+    max-width: 416px;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    margin: 0 auto;
+    background-color: #AA0601;
+
+    @media(max-width:992px){
+      max-width: 336px;
+    }
+
+    @media(max-width:768px){
+      max-width: 348px;
+    }
+
+  }
+
+  a:hover{
+    opacity: 0.7;
+  }
+
+}

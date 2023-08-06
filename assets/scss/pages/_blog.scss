@@ -1,0 +1,144 @@
+.blog_main{
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        margin-bottom: 32px;
+
+        @media(max-width: 768px){
+            font-size: 24px;
+        }
+    }
+
+    .blog_info{
+        position: relative;
+        width: $col-6;
+
+        @media(max-width:768px){
+            width: $col-12;
+        }
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 16px;
+        }
+
+        h2{
+            font-size: 32px;
+            color: #650300;
+            @media(max-width:992px){
+                font-size: 24px;
+            }
+        }
+
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            @media(max-width:992px){
+                font-size: 16px;
+            }
+        }
+
+        time{
+            font-size: 16px;
+            color: #000000;
+            opacity: 0.7;
+        }
+
+        p{
+            color: #555555;
+            @media(max-width:992px){
+                font-size: 16px;
+            }
+        }
+
+
+    }
+
+    .blog_item_link{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: $col-6;
+        }
+        
+        
+        @media(max-width:768px){
+            flex-direction: column;
+            img{
+                width: $col-12;
+            }
+        }
+    }
+
+    .blog_item_link:hover{
+        opacity: 0.7;
+    }
+
+    .blog_item{
+       margin-bottom: 60px; 
+       @media(max-width: 992px){
+            margin-bottom: 24px;
+        }
+    }
+
+    .blog_item:last-child{
+        margin-bottom: 124px; 
+        @media(max-width: 992px){
+            margin-bottom: 80px;
+        }
+    }
+
+    .body{
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+
+    .body::after{
+        content: "MORE";
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+
+        color: #650300;
+        font-size: 36px;
+        font-weight: 700;
+
+        @media(max-width:1130px){
+            display: none;
+        }
+    }
+
+    @media(max-width:1130px){
+        .body p::after{
+            content: "more";
+            color: #555555;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="shortcut icon" href="../assets/images/home-sectioin2-4.png" type="image/x-icon">
+    <title>門市據點</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="branch_location">
+        <div class="location">
+            <div class="container">
+              <h1>門市據點</h1>
+              <div class="location_select">
+                <span>選擇分店</span>
+                <select name="location_selecter" id="location_selecter" class="location_selecter">
+                  <option value="台北">台北市</option>
+                  <option value="台中">台中</option>
+                  <option value="高雄">高雄</option>
+                </select>
+              </div>
+
+              <div class="branch_info">
+                  <div class="branch_card">
+                      <img src="../assets/images/store-1.png" alt="分店圖片">
+                      <div class="branch_detail">
+                          <h2>台北中山旗艦店</h2>
+                          <div class="branch_card_detail">
+                              <p class="phone"><span class="material-icons-outlined phone-icon">phone</span>電話：(02)000-1234</p>
+                              <p class="opentime"><span class="material-icons-outlined phone-icon">access_time</span>營業時間：10:00-21:00</p>
+                              <p class="address"><span class="material-icons-outlined phone-icon">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28915.69078904882!2d121.51896446177807!3d25.05234780176726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6LevMjXlt7cyLTHomZ8!5e0!3m2!1szh-TW!2stw!4v1691147998445!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

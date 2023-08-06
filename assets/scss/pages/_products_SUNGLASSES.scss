@@ -1,0 +1,205 @@
+.products-SUNGLASSES-img{
+    display: flex;
+    
+    .product-header-1{
+        height: 296px;
+        width: 50%;
+        background-image: url("../images/product-header-3.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .product-header-2{
+        height: 296px;
+        width: 50%;
+        background-image: url("../images/product-header-4.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    @media(max-width:992px){
+        .product-header-1{
+            height: 296px;
+            width: 50%;
+            background-image: url("../images/product-header-sm-3.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .product-header-2{
+            height: 296px;
+            width: 50%;
+            background-image: url("../images/product-header-sm-4.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media(max-width:768px){
+        .product-header-1{
+            height: 136px;
+            width: 50%;
+            background-image: url("../images/product-header-sm-3.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .product-header-2{
+            height: 136px;
+            width: 50%;
+            background-image: url("../images/product-header-sm-4.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+.products-SUNGLASSES{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(max-width:768px){
+        padding-top: 40px;
+        padding-bottom:64px;
+    }
+
+    h2{
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    @media(max-width:768px){
+        h2{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+
+    .products_list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .products_item{
+        width: $col-4;
+        margin-bottom: 80px;
+    }
+
+    @media(max-width:992px){
+        .products_item{
+            width: $col-6;
+        }
+    }
+
+    @media(max-width:768px){
+        .products_item{
+            width: $col-12;
+            margin-bottom: 24px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .products_detail{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .product_name{
+        font-size: 24px;
+    }
+
+    .product_price{
+        color: #AA0601;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .productcolor{
+        display: flex;
+    }
+
+    .color-1{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    .color-2{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: #B75929;
+        border-radius: 4px;
+    }
+
+
+    .pagenation{
+        display: flex;
+        max-width: 372px;
+        margin: 0 auto;
+        margin-top: 80px;
+
+        @media(max-width:768px){
+            margin-top: 75px;
+        }
+        
+        a{
+            color: #555555;
+            text-align: center;
+            display:block;
+            padding: 12px 0;
+        }
+
+        li{
+            width: 11.29032258%;
+            border-top: 1px solid #555555;
+            border-bottom: 1px solid #555555;
+            border-left: 1px solid #555555;
+        }
+
+        .prepage{
+            width:21.774193548% ;
+        }
+
+        .nextpage{
+            background-color: #F2F2F2;
+            width:21.774193548% ;
+            border-right: 1px solid #000;
+        }
+
+        .selected{
+            padding: 12px 0;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+    
+
+    }
+}

@@ -1,0 +1,76 @@
+.products-menu-list{
+    max-width: 1296px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.products-menu-item{
+    width: 33.333333333%;
+    text-align: center;
+    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    /*設定偽元素的對齊基準點*/
+    position: relative;
+}
+
+/*每一個 li 都要有此樣式*/
+/*偽元素的基本設定以及樣式設定*/
+.products-menu-item::after{
+    content: ""; /*沒用到仍然要寫，雙引號內容留空*/
+    position: absolute;/*這是必要設定的參數值*/
+    /*對齊的方式*/
+    bottom: 0;
+    left: 0;
+
+    /*元素的樣式*/
+    width: 0%; /*預設寬度先訂 0%， hover 效果再用 100%*/
+    border-bottom: 8px solid #AA0601;
+    transition: all 0.7s;/*用 0.7s 的速度將寬度從0%變成100%*/
+}
+
+.products-menu-item:hover::after{
+    /*偽元素的 hover 效果會將寬度變為100%*/
+    width: 100%;
+}
+
+/*如果現在在OPTICAL頁面，該頁面的選單底線就設定為實心*/
+.products_OPTICAL::after{
+   width: 100%;
+}
+.products_OPTICAL:hover{
+    opacity: 0.7;
+}
+
+/*如果現在在OPTICAL頁面，該頁面的選單底線就設定為實心*/
+.products_SUNGLASSES::after{
+    width: 100%;
+ }
+ .products_SUNGLASSES:hover{
+     opacity: 0.7;
+ }
+
+.products-menu-link{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 24px 0;
+    color: black;
+}
+
+
+@media(max-width:992px){
+    .products-menu-item a{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:768px){
+    .products-menu-item a{
+        font-size: 16px;
+    }
+}
+
+
+
+
+

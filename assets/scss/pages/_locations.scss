@@ -1,0 +1,119 @@
+.location{
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    @media(max-width:768px){
+        padding-top: 52px;
+        padding-bottom: 64px;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+    }
+
+    @media(max-width:768px){
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    .location_select{
+        margin: 32px 0 40px 0;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        @media(max-width:768px){
+            margin: 24px 0;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    .location_selecter{
+        width: $col-3;
+        border: 1px solid #CED4DA;
+        color: #495057;
+        opacity: 0.75;
+        padding: 6px 0 6px 12px;
+
+        @media(max-width: 992px){
+            width: 45%;
+        }
+        @media(max-width: 768px){
+            width: 75%;
+        }
+    }
+
+    .locations_list{
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        margin-right: -12px;
+        margin-left: -12px;
+    }
+
+    .locations_item{
+        width: 33.333333%;
+        //margin-right: 24px;
+        padding: 0 12px;
+        margin-bottom: 48px;
+        
+        @media(max-width:768px){
+            margin-bottom: 24px;
+        }
+
+
+        h2{
+            font-size: 24px;
+            padding: 8px 0 8px 24px;
+            border: 1px solid #00000020;
+        }
+
+        p{
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        @media(max-width:992px){
+            width: $col-6;
+        }
+
+        @media(max-width:768px){
+            width: $col-12;
+
+        }
+    }
+
+    .location_detail{
+        padding: 16px 24px;
+        border: 1px solid #00000020;
+    }
+
+    .location_link{
+        text-align: center;
+        display: block;
+        padding: 16px 0 ;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+    .location_link:hover{
+        opacity: 0.7;
+    }
+
+    .material-icons-outlined{
+        display: block;
+        padding: 5px 0;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}

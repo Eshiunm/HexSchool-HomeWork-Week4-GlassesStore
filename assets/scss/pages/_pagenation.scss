@@ -1,0 +1,41 @@
+.pagenation{
+    display: flex;
+    max-width: 372px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    @media(max-width:768px){
+        margin-top: 75px;
+    }
+    
+    a{
+        color: #555555;
+        text-align: center;
+        display:block;
+        padding: 12px 0;
+    }
+
+    li{
+        width: 11.29032258%;
+        border-top: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+        border-left: 1px solid #555555;
+    }
+
+    .prepage{
+        width:21.774193548% ;
+    }
+
+    .nextpage{
+        background-color: #F2F2F2;
+        width:21.774193548% ;
+        border-right: 1px solid #000;
+    }
+
+    .selected{
+        padding: 12px 0;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+}

@@ -1,0 +1,70 @@
+.header{
+  background-color: #aa0601;
+  padding: 16px 0;
+
+  @media(max-width:768px){
+    padding-bottom: 0;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    
+    @media(max-width:768px){
+      max-width: 768px;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  .navbar-logo{
+    width: 80px;/*設定好寬度，高度也會跟著等比例縮放*/
+
+    @media(max-width:768px){
+      margin: 0 0 16px 16px;
+    }
+
+  }
+
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+    @media(max-width:768px){
+      flex-wrap: wrap;
+    }
+  }
+
+  .navbar-item{
+    height: 100%;
+    @media(max-width:768px){
+      width: 50%;
+      border: 1px solid #FFFFFF;
+      text-align: center;
+    }
+  }
+
+
+  .navbar-link{
+    font-size: 20px;
+    padding: 8px 32px;
+    color: #FFFFFF;
+    display: inline-block;/*將 a 標籤做成 block 型態比較容易按到*/
+
+    @media(max-width:768px){
+      font-size: 16px;
+      padding: 12px 0 ;
+    }
+  }
+
+
+  .navbar-link:hover{
+   opacity: 0.7;
+  }
+  .navbar-logo:hover{
+    opacity: 0.7;
+  }
+
+  .navbar-item:last-child .navbar-link{
+    padding-right: 0;
+  }
+}
